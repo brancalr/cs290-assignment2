@@ -1,0 +1,54 @@
+/* changes first column header cells to italic, not bold */
+table tbody th:first-child{ 
+	font-style: italic; font-weight: normal 
+}
+
+/* makes first non-header cell of non-header row have red text */
+table tbody th:first-child + td{
+	color: red;
+}
+
+/* makes third non-header cell of non-header row have blue text */
+table tbody th:first-child + td + td + td{
+	color: blue;
+}
+
+/* makes odd non-header/footer rows have a light green background */
+table tbody tr:nth-child(2n)
+{
+	background-color: rgb(144, 238, 144);
+}
+
+/* makes even non-header/footer rows have light blue background */
+table tbody tr:nth-child(2n+3)
+{
+	background-color: rgb(173, 216, 230);
+}
+
+/* hovering over a dd entry will make the background purple */
+dd:hover{
+	background-color: purple;
+}
+
+/* align to left, take up 3/4 of page, assign 20px between previous element, and has pink background */
+.outer-content{
+	height: 50px;
+	margin-top: 20px;
+	margin: left;
+	width: 75%;
+	background-color: pink;
+}
+
+/* inner content takes up 3/4 of parent div, makes it centred and makes background light blue */
+.inner-content{
+	margin: auto; /* reference: http://stackoverflow.com/questions/8417314/css-how-to-center-nested-divs */
+    position:relative;
+    top:25%;
+    width: 75%;
+    height: 50%;
+	text-align: center;
+	background-color: rgb(173, 216, 230);
+}
+img{
+	float: left;
+}
