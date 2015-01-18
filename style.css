@@ -26,7 +26,7 @@ table tbody tr:nth-child(2n+3)
 }
 
 /* hovering over a dd entry will make the background purple */
-dd:hover{
+dt:hover + dd{
 	background-color: purple;
 }
 
