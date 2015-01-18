@@ -49,6 +49,8 @@ dd:hover{
 	text-align: center;
 	background-color: rgb(173, 216, 230);
 }
+
+/* floats image so text wraps around it */
 img{
 	float: left;
 }
